@@ -7,7 +7,7 @@ const areas = [
 ];
 
 var area_cnt = 0;
-var area_cnt_len = 0;i
+var area_cnt_len = 0;
 
 // arrow function syntax
 const hideFromEnd = () => {
@@ -17,7 +17,7 @@ const hideFromEnd = () => {
 
 	if(area_cnt_len >= 0) {
 		area_cnt_len--;
-		setTimeout("hideFromStart()", 150);
+		setTimeout("hideFromEnd()", 150);
 	} else {
 		if(area_cnt < areas.length-1) area_cnt++;
 		else area_cnt = 0;
@@ -25,7 +25,7 @@ const hideFromEnd = () => {
 	}
 };
 
-const displayFromStart() = () => {
+const displayFromStart = () => {
 	var str = areas[area_cnt].substring(0, area_cnt_len);
 	str += "_";
 	text_section.innerHTML = str;

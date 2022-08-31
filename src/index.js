@@ -34,8 +34,9 @@ const displayFromStart = () => {
 		// increament the length
 		area_cnt_len++;
 		setTimeout("displayFromStart()", 150)
-	} else if(area_cnt_len >= 0)
+	} else if(area_cnt_len >= 0) {
 		hideFromEnd();
+	}
 };
 
 window.addEventListener("load", (e) => {

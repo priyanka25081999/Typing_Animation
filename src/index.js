@@ -17,11 +17,11 @@ const hideFromEnd = () => {
 
 	if(area_cnt_len >= 0) {
 		area_cnt_len--;
-		setTimeout("hideFromEnd()", 150);
+		setTimeout("hideFromEnd()", 200);
 	} else {
 		if(area_cnt < areas.length-1) area_cnt++;
 		else area_cnt = 0;
-		setTimeout("displayFromStart()", 150);
+		setTimeout("displayFromStart()", 200);
 	}
 };
 
@@ -33,7 +33,7 @@ const displayFromStart = () => {
 	if(area_cnt_len < areas[area_cnt].length) {
 		// increament the length
 		area_cnt_len++;
-		setTimeout("displayFromStart()", 150)
+		setTimeout("displayFromStart()", 200)
 	} else if(area_cnt_len >= 0) {
 		hideFromEnd();
 	}

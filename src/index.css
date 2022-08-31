@@ -40,7 +40,7 @@ body {
 
 .container .subtitle .text2 {
 	font-size: 4vw;
-	color: rgb(92, 0, 92);
+	color: #0313f1 !important;
 }
 
 /* different screens */
